@@ -1,0 +1,53 @@
+.hamburger {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 2.5em;
+	right: 2em;
+}
+
+.backdrop {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.hamburger {
+		display: block;
+
+		&[data-checked="false"] ~ ul {
+			display: none;
+		}
+
+		&[data-checked="true"] {
+			position: fixed;
+			z-index: 3;
+			top: 2em;
+			right: 2em;
+
+			& ~ .backdrop {
+				display: block;
+				position: fixed;
+				inset: 0;
+				z-index: 1;
+				background: rgba(0 0 0 / 0.5);
+			}
+		}
+	}
+
+	ul {
+		z-index: 2;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 12.5em;
+		padding: 10em 0 0 1.5em;
+		display: flex;
+		flex-direction: column;
+		background: white;
+
+		& a {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.link {
+	color: inherit;
+	text-decoration: underline;
+
+	&.active {
+		color: gray;
+		text-decoration: none;
+		pointer-events: none;
+	}
+}
