@@ -1,5 +1,5 @@
 import { lazy, Suspense, ReactNode } from "react"
-import { Route } from "wouter"
+import { Router, Route } from "wouter"
 
 import { ActiveLink } from "./components"
 import { useHover } from "./hooks"
@@ -28,7 +28,7 @@ const RouteTo = ({ href }: { href: keyof typeof pages }) => (
 
 export default function App() {
 	return (
-		<>
+		<Router base="/front-end-mentor">
 			<Suspense>
 				<RouteTo href="" />
 				<RouteTo href="news-homepage" />
@@ -38,6 +38,6 @@ export default function App() {
 				<ActiveLink to="/">Index</ActiveLink>
 				<ActiveLink to="/news-homepage">News Homepage</ActiveLink>
 			</Navigator>
-		</>
+		</Router>
 	)
 }
