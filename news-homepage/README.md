@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [URL](https://github.com/eilx/front-end-mentor/tree/main/news-homepage)
+-   Live Site URL: [URL](https://eilx.github.io/front-end-mentor/#/news-homepage)
 
 ## My process
 
