@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 
-import "./assets/fonts/Inter.ttf"
 import { logo, favicon } from "./assets/images"
 
 import { useArticles } from "./hooks"
@@ -23,7 +22,7 @@ export default function Page() {
 	return (
 		<>
 			<header className={css.header}>
-				<img src={logo} />
+				<img src={logo} alt="Website logo" />
 
 				<Navigation>
 					<a href="#">Home</a>
@@ -44,7 +43,7 @@ export default function Page() {
 						<img alt="" src={articles.main.image.desktop} />
 					</picture>
 
-					<h2>{articles.main.title}</h2>
+					<h1>{articles.main.title}</h1>
 					<div className={css.mainArticleBody}>
 						<p>{articles.main.snippet}</p>
 						<button>READ MORE</button>
@@ -67,7 +66,7 @@ export default function Page() {
 				<section className={css.topArticles}>
 					{articles.top.map((article, i) => (
 						<article key={i}>
-							<img src={article.image} />
+							<img src={article.image} alt="article image" />
 							<a href="#">
 								<span>{String(i + 1).padStart(2, "0")}</span>
 								<h3>{article.title}</h3>

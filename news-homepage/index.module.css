@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
 @layer setup {
 	*,
 	*::before,
@@ -31,18 +33,18 @@
 		--very-dark-blue: hsl(240 100% 5%);
 
 		font-family: Inter;
+		font-size: 15px;
 	}
 
 	p {
 		color: var(--dark-grayish-blue);
-		font-size: 15px;
 		line-height: 1.5em;
 	}
 }
 
 @layer layout {
 	:root {
-		padding: 5em 12vw 2em;
+		padding: 5em 13vw 2em;
 		max-width: 90em;
 		margin: auto;
 	}
