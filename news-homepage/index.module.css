@@ -34,6 +34,7 @@
 
 		font-size: 15px;
 		font-family: Inter;
+		background-color: var(--off-white);
 	}
 
 	p {
